@@ -2,9 +2,11 @@
 import tensorflow as tf
 import tensorflow_hub as hub
 import matplotlib.pyplot as plt
-
+'''
+Module specificially designed to collect data for text classifications tasks.
+Dataset structure is based on the Imdb Dataset (aclImdb) for movie reviews.
+'''
 class ModellingUtils:
-
     @staticmethod
     def text_dataset_from_directory(
         path, 
